@@ -49,10 +49,10 @@ function img() {
 }
 
 // fonts
-function fonts() {
-    return src('src/accepts/fonts/**/*')  
-        .pipe(dest('dist/fonts/'));
-}
+// function fonts() {
+//     return src('src/stylus/fonts/**/*')  
+//         .pipe(dest('dist/fonts/'));
+// }
 
 
 function clear() {
@@ -68,10 +68,10 @@ function serve() {
     watch('src/stylus/**/*.styl', series(styl)).on('change', sync.reload, serve)
     watch('src/app.js', series(scripts)).on('change', sync.reload, serve)
     watch('src/accepts/img/**/*', series(img)).on('change', sync.reload, serve)
-    watch('src/accepts/fonts/**/*', series(fonts)).on('change', sync.reload, serve)
+    // watch('src/accepts/fonts/**/*', series(fonts)).on('change', sync.reload, serve)
 }
 
 
 exports.build = series(clear, styl, html)
-exports.serve = series(clear, styl, img, fonts, html, scripts, serve)
+exports.serve = series(clear, styl, img, html, scripts, serve)
 exports.clear = clear
