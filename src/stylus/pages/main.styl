@@ -1,7 +1,29 @@
 m = main
 
-.{m}-img
-    display block
-    margin 0 auto
-    width 500px
-    height auto
+.{m}-bgc
+    padding 10em 0
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #fcb507 50%, black 50%);
+    position relative
+    .{m}
+        .{m}-inner
+            .{m}-text
+                display flex
+                align-items center
+                justify-content center
+                .{m}-h1
+                    margin 0 auto
+            .{m}-img
+                width 500px
+                height 500px
+
+                position absolute
+                left 50%
+                margin-left: -250px
+
+                top 50%
+                margin-top -250px
+                
+                background: url(http://site.ru/fon.png) 100% 0 repeat-y
+                z-index 2
