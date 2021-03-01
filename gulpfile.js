@@ -45,7 +45,7 @@ function scripts() {
 // img
 function img() {
     return src('src/accepts/img/**/*')  
-        .pipe(dest('dist/img/'));
+        .pipe(dest('dist/accepts/img/'));
 }
 
 // fonts
