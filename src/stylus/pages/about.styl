@@ -1,24 +1,48 @@
 ab = about
 
-.{ab}-bgc
-    background: linear-gradient(to right, #8e0e00, #1f1c18 );
-    .{ab}
-        .{ab}-inner
-            display grid 
-            grid-template-columns: repeat(3, 1fr)
-            align-items center
+// .{ab}-bgc
+//     // background: linear-gradient(to right, #8e0e00, #1f1c18 );
+//     // background: linear-gradient(90deg, rgba(8,8,8,1) 35%, rgba(252,181,7,1) 50%, rgba(8,8,8,1) 65%);
+//     background: linear-gradient(90deg, #90909 30%, #fcb507 50%, #090909 30%);
 
-            height 1130px
-            width: 100%;
-            // background: linear-gradient(to right, #080808 33%, #fcb507 70%, #080808 33%);
-            // #8e0e00 → #1f1c18
+.{ab}
+    .{ab}-inner
+        display grid 
+        grid-template-columns: repeat(3, 1fr)
+        align-items center
+        grid-gap 3em
 
-            // background: linear(to right, #080808 33%, #fcb507 70%, #080808 33%)
-            // background linear-gradient(to right, rgba(8,8,8,1) 33%, rgba(252,181,7,1) 70%, rgba(8,8,8,1) 33%)
+        height 1130px
+        width: 100%;
+        .{ab}-img-svg
+            width 30px
+            height 30px
 
-            .{ab}-img
-                width 30px
-                height 30px
+            display block
+            margin 0 auto
+            margin-top 3em
+        .{ab}-h3
+            margin-bottom 1em
+            text-align center
+            {mainColor}
 
-                display block
-                margin 0 auto
+            // width: 100%;
+            // height: 100%;
+
+        .{ab}-comfort
+            width 33%
+            float left
+            min-height: 150px;
+            background: #ccc;
+        .{ab}-img
+            width 33%
+            float left
+            min-height: 150px;
+            background: #ccc;
+        .{ab}-performance
+            width 33%
+            float left
+            min-height: 150px;
+            background: #ccc;
+
+
