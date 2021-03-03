@@ -2,14 +2,26 @@ ft = footer
 grid(even = #fff, odd = #eee)
     display grid
     grid-template-columns repeat(2, 1fr)
+// even - ?
+// odd - ?
 
 .{ft}
     .{ft}-inner
-        margin-bottom 20em
-        .{ft}-contact
+        // margin-bottom 20em
+        .{ft}-social
             grid()
+            .{ft}-email
+                .form-control
+                    width 20em
+                .{ft}-email-p
+                    margin-bottom 1em
             .{ft}-soc 
                 grid()
+                grid-gap: 3em;
+
+                margin-bottom 10em
+                .{ft}-soc-p
+                    text-align right    
                 .{ft}-soc-img-pack    
                     display flex
                     justify-content space-between
@@ -17,6 +29,12 @@ grid(even = #fff, odd = #eee)
                         margin-right 10px
                         width 30px
                         height 30px
+        .{ft}-link
+            display flex
+            justify-content space-between
+        .{ft}-reserved
+            text-align right
+            margin-top 3em
                         
 
 
