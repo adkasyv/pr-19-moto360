@@ -18,6 +18,7 @@
         "gulp-file-include": "latest",
         "gulp-htmlmin": "latest",
         "gulp-pug": "latest",
+        "pug-code-gen": ">=2.0.3",
         "gulp-sourcemaps": "^2.6.5",
         "gulp-stylus": "latest"
     },
