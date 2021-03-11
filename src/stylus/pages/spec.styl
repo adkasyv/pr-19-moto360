@@ -2,17 +2,81 @@ sp = spec
 
 .{sp}
     .{sp}-inner
+        display grid
+        grid-gap 7em
+        @media(max-width 991px)
+            grid-gap 13em
+        // @media(max-width 991px)
+        //     grid-gap 13em
         .{sp}-top
             display grid 
             grid-template-columns: repeat(2, 1fr)
+            @media(max-width 991px)
+                grid-template-columns 1fr
             .{sp}-left
                 display flex
-                align-items center
+                flex-direction column
                 justify-content center
-        .{sp}-bottom
+                @media(max-width 991px)
+                    padding 0 8em
+                @media(max-width 576px)
+                    padding 0 4em
+                @media(max-width 376px)
+                    padding 0 2em
+                .{sp}-h3
+                    text-align left
+                .{sp}-p
+                    margin-top 2em
+                    @media(max-width 576px)
+                        font-size 14px
+
+            .{sp}-right
+                position relative
+                .{sp}-text
+                    display flex
+                    align-items center
+                    justify-content center
+                    .{sp}-h3
+                        // font-size 200px
+                        font-size: calc(70px + (110 + 110 * 0.7) * ((100vw - 320px) / 1170))
+                        margin 0 auto
+                .{sp}-img
+                    width 500px
+                    height 500px
+
+                    position absolute
+                    left 50%
+                    margin-left: -250px
+
+                    top 75%
+                    margin-top -250px
+                    
+                    background: url(http://site.ru/fon.png) 100% 0 repeat-y
+                    z-index 2
+
+                    @media(max-width 991px)
+                        left: 50%;
+                        margin-left: -250px;
+                        top: 50%;
+                        margin-top: -150px;
+                        
+                    @media(max-width 576px)
+                        width 400px
+                        height 400px
+                        margin-left: -200px;
+                        margin-top: -100px;
+
+                    @media (max-width: 376px)
+                        width 300px
+                        height 300px
+                        left 30%
+                        margin-left -90px
+                        top 30%
+                        margin-top 0
+        .{sp}-feature
             display grid 
             grid-template-columns: repeat(3, 1fr)
-            .{sp}-bottom-item
+            .{sp}-feature-item
                 display grid
                 justify-items center
 
