@@ -19,6 +19,8 @@ sp = spec
                 justify-content center
                 @media(max-width 991px)
                     padding 0 8em
+                @media(max-width 768px)
+                    padding 0 6em
                 @media(max-width 576px)
                     padding 0 4em
                 @media(max-width 376px)
@@ -37,8 +39,11 @@ sp = spec
                     align-items center
                     justify-content center
                     .{sp}-h3
-                        // font-size 200px
-                        font-size: calc(70px + (110 + 110 * 0.7) * ((100vw - 320px) / 1170))
+                        // 80px - min
+                        // 170px - max 
+                        // font-size 30px
+
+                        font-size: calc(80px + (90 + 90 * 0.7) * ((100vw - 320px) / 1170))
                         margin 0 auto
                 .{sp}-img
                     width 500px
