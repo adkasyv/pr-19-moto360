@@ -4,6 +4,9 @@ dg = degrees
     .{dg}-inner
         display grid
         grid-template-columns: repeat(2, 1fr)
+        @media(max-width 768px)
+            grid-template-columns: repeat(1, 1fr)
+            grid-gap 3em
         .{dg}-h3
             margin-bottom 1em
             {mainColor}
