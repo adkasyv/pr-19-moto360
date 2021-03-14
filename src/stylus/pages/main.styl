@@ -21,29 +21,21 @@ m = main
                 background: url(http://site.ru/fon.png) 100% 0 repeat-y
                 position absolute
                 z-index 2
-
                 width 500px
                 height 500px
-
                 left 50%
                 margin-left: -250px
-
                 top 50%
                 margin-top -250px
-                
-
-                @media(max-width 576px)
+                @media mqSmall
                     width 400px
                     height 400px
                     margin-left: -200px;
                     margin-top: -100px;
-
-                @media (max-width: 376px)
+                @media mqExtraSmall
                     width 300px
                     height 300px
-                    left 30%
-                    margin-left -90px
-                    top 30%
-                    margin-top 0
-                
+                    margin-left -150px
+                    margin-top -50px
+
                 // @media screen (20em <= width <= 39em )

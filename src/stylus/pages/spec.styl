@@ -4,34 +4,29 @@ sp = spec
     .{sp}-inner
         display grid
         grid-gap 7em
-        @media(max-width 991px)
+        @media mqMedium
             grid-gap 13em
-        // @media(max-width 991px)
-        //     grid-gap 13em
         .{sp}-top
             display grid 
             grid-template-columns: repeat(2, 1fr)
-            @media(max-width 991px)
-                grid-template-columns 1fr
+            @media mqMedium
+                grid-template-columns: repeat(1, 1fr)
+                
             .{sp}-left
                 display flex
                 flex-direction column
                 justify-content center
-                // @media(max-width 991px)
-                //     padding 0 8em
-                media media-query-tablet
+                @media mqMedium
                     padding 0 8em
-                @media(max-width 768px)
+                @media mqSmall
                     padding 0 6em
-                @media(max-width 576px)
-                    padding 0 4em
-                @media(max-width 376px)
+                @media mqExtraSmall
                     padding 0 2em
                 .{sp}-h3
                     text-align left
                 .{sp}-p
                     margin-top 2em
-                    @media(max-width 576px)
+                    @media mqSmall
                         font-size 14px
 
             .{sp}-right
@@ -57,25 +52,25 @@ sp = spec
                     background: url(http://site.ru/fon.png) 100% 0 repeat-y
                     z-index 2
 
-                    @media(max-width 991px)
+                    @media mqMedium
                         left: 50%;
                         margin-left: -250px;
                         top: 50%;
                         margin-top: -150px;
                         
-                    @media(max-width 576px)
+                    @media mqSmall
                         width 400px
                         height 400px
                         margin-left: -200px;
                         margin-top: -100px;
 
-                    @media (max-width: 376px)
+                    @media mqExtraSmall
                         width 300px
                         height 300px
-                        left 30%
-                        margin-left -90px
-                        top 30%
+                        margin-left -150px
                         margin-top 0
+                        // left 30%
+                        // top 30%
         .{sp}-feature
             display grid 
             grid-template-columns: repeat(3, 1fr)
