@@ -1,35 +1,23 @@
 ft = footer
-grid(even = #fff, odd = #eee)
-    display grid
-    grid-template-columns repeat(2, 1fr)
-// breackpoints()
-//     phone: 360px
-//     tablet: 768px
-//     desktop: 1366px
-//     LGdesktop: 1920px
 
 .{ft}
     .{ft}-inner
         display grid
         grid-gap 5em        
         .{ft}-social
-            grid()
-            // @media(max-width 768px)
-            //     grid-template-columns repeat(1, 1fr)
-            @media (min-width: 400px) and (max-width: 768px)
-                grid-template-columns repeat(1, 1fr)
-                grid-gap 5em
-                justify-items center
-                
+            display grid
+            // grid-template-columns: repeat(auto-fill,minmax(250px,auto));
+            grid-template-columns repeat(2, 1fr)
+            grid-gap 2em
             .{ft}-email
                 .form-control
                     width 20em
                 .{ft}-email-p
                     margin-bottom 1em
             .{ft}-soc 
-                grid()
-                grid-gap 3em
-                justify-items center
+                display grid
+                grid-template-columns repeat(2, 1fr)
+                align-items center
                 .{ft}-soc-p
                     text-align right    
                 .{ft}-soc-img-pack    
@@ -40,8 +28,9 @@ grid(even = #fff, odd = #eee)
                         width 30px
                         height 30px
         .{ft}-link
-            display flex
-            justify-content space-between
+            display grid
+            grid-template-columns: repeat(auto-fill,minmax(250px,auto));
+            grid-gap 2em
         .{ft}-reserved
             text-align right
             margin-top 3em
