@@ -1,11 +1,10 @@
 // ft = footer
 
 .footer
+    margin-bottom 1em 
     .footer-inner
         display grid
         grid-gap 4em   
-
-        margin-bottom 1em 
 
         .footer-contact
             display grid
@@ -22,6 +21,11 @@
             .footer-contact__social
                 display flex
                 align-items center
+
+                @media mqExtraSmall
+                    display grid
+                    grid-template-columns repeat(auto-fill,minmax(320px,auto));
+
                 .footer__p
                     text-align right    
                 .footer-img  

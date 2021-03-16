@@ -12,27 +12,27 @@ ab = about
         @media mqSmall
             align-items normal
             grid-template-rows 25em 25em
-        .{ab}-img-svg
-            display block
-
-            width 30px
-            height 30px
-            margin 0 auto
-            margin-top 3em
-        .{ab}-h3
-            margin-bottom 1em
-            text-align center
-            {mainColor}
         .{ab}-img
             @media mqMedium
                 display none
-        .{ab}-comfort
-        .{ab}-performance
+        .{ab}-left,
+        .{ab}-right
+            .{ab}-img_svg
+                display block
+
+                width 30px
+                height 30px
+                margin 0 auto
+                margin-top 3em
+            .{ab}-h3
+                margin-bottom 1em
+                text-align center
+                {mainColor}
+        .{ab}-left
+        .{ab}-right
             @media mqMedium
                 padding 0 8em
             @media mqSmall
                 padding 0 6em
             @media mqExtraSmall
                 padding 0 2em
-
-
