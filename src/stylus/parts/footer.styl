@@ -1,39 +1,51 @@
-ft = footer
+// ft = footer
 
-.{ft}
-    .{ft}-inner
+.footer
+    .footer-inner
         display grid
-        grid-gap 5em        
-        .{ft}-social
+        grid-gap 4em   
+
+        margin-bottom 1em 
+
+        .footer-contact
             display grid
-            // grid-template-columns: repeat(auto-fill,minmax(250px,auto));
             grid-template-columns repeat(2, 1fr)
             grid-gap 2em
-            .{ft}-email
+            @media mqSmall
+                grid-template-columns repeat(auto-fill,minmax(320px,auto));
+                justify-items center
+            .footer-contact__email
+                .footer__p
+                    margin-bottom 1em
                 .form-control
                     width 20em
-                .{ft}-email-p
-                    margin-bottom 1em
-            .{ft}-soc 
-                display grid
-                grid-template-columns repeat(2, 1fr)
+            .footer-contact__social
+                display flex
                 align-items center
-                .{ft}-soc-p
+                .footer__p
                     text-align right    
-                .{ft}-soc-img-pack    
+                .footer-img  
                     display flex
                     justify-content space-between
-                    .{ft}-soc-img__item
+                    .footer-img__item
                         margin-right 10px
                         width 30px
                         height 30px
-        .{ft}-link
+        
+        .footer-link
             display grid
             grid-template-columns: repeat(auto-fill,minmax(250px,auto));
             grid-gap 2em
-        .{ft}-reserved
+
+        .footer-reserved
             text-align right
             margin-top 3em
+            .footer-reserved__p
+                @media mqExtraSmall
+                    text-align left
+                    font-size 14px 
+                
                         
+
 
 
