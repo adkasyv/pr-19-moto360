@@ -1,10 +1,5 @@
 ab = about
 
-// .{ab}-bgc
-//     // background: linear-gradient(to right, #8e0e00, #1f1c18 );
-//     // background: linear-gradient(90deg, rgba(8,8,8,1) 35%, rgba(252,181,7,1) 50%, rgba(8,8,8,1) 65%);
-//     background: linear-gradient(90deg, #90909 30%, #fcb507 50%, #090909 30%);
-
 .{ab}
     .{ab}-inner
         display grid 
@@ -13,12 +8,10 @@ ab = about
         grid-gap 3em
         @media mqMedium
             grid-template-columns repeat(1, 1fr)
-            grid-template-rows 50% 50%
+            grid-template-rows 30em 30em
         @media mqSmall
             align-items normal
             grid-template-rows 25em 25em
-        height 1130px
-        width: 100%;
         .{ab}-img-svg
             display block
 
