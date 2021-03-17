@@ -14,7 +14,12 @@ m = main
                 justify-content center
                 .{m}-h1
                     margin 0 auto
-                    font-size: calc(50px + (100 + 100 * 0.7) * ((100vw - 320px) / 1170))
+                    font-size 10em
+                    // font-size: calc(50px + (100 + 100 * 0.7) * ((100vw - 320px) / 1170))
+                    @media screen-md 
+                        font-size 5em
+                    @media screen-sm 
+                        font-size 3em
                     .{m}-h1-span
                         color color-main
             .{m}-img

@@ -10,24 +10,27 @@
             display grid
             grid-template-columns repeat(2, 1fr)
             grid-gap 2em
-            @media screen-sm
-                grid-template-columns repeat(auto-fill,minmax(320px,auto));
+            @media screen-md
+                grid-template-columns repeat(1, 1fr)
                 justify-items center
             .footer-contact__email
-                .footer__p
+                .email_p
                     margin-bottom 1em
                 .form-control
                     width 20em
+                    @media screen-sm
+                        width 15em
             .footer-contact__social
-                display flex
+                display grid
                 align-items center
-
-                @media screen-xs
-                    display grid
-                    grid-template-columns repeat(auto-fill,minmax(320px,auto));
-
-                .footer__p
+                grid-template-columns repeat(2, 1fr)
+                grid-gap 1em
+                @media screen-sm
+                    grid-template-columns repeat(1, 1fr)
+                .social_p
                     text-align right    
+                    @media screen-md
+                        text-align center
                 .footer-img  
                     display flex
                     justify-content space-between
