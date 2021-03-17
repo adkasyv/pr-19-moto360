@@ -10,7 +10,7 @@
             display grid
             grid-template-columns repeat(2, 1fr)
             grid-gap 2em
-            @media mqSmall
+            @media screen-sm
                 grid-template-columns repeat(auto-fill,minmax(320px,auto));
                 justify-items center
             .footer-contact__email
@@ -22,7 +22,7 @@
                 display flex
                 align-items center
 
-                @media mqExtraSmall
+                @media screen-xs
                     display grid
                     grid-template-columns repeat(auto-fill,minmax(320px,auto));
 
@@ -45,7 +45,7 @@
             text-align right
             margin-top 3em
             .footer-reserved__p
-                @media mqExtraSmall
+                @media screen-xs
                     text-align left
                     font-size 14px 
                 

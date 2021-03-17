@@ -4,9 +4,9 @@ pf = performance
     .{pf}-inner
         display grid
         grid-template-columns: repeat(2, 1fr)
-        @media(max-width 768px)
+        @media screen-sm
             grid-template-columns: repeat(1, 1fr)
             grid-gap 3em
         .{pf}-h3
             margin-bottom 1em
-            {mainColor}
+            color color-main

@@ -4,29 +4,29 @@ sp = spec
     .{sp}-inner
         display grid
         grid-gap 7em
-        @media mqMedium
+        @media screen-md
             grid-gap 13em
         .{sp}-top
             display grid 
             grid-template-columns: repeat(2, 1fr)
-            @media mqMedium
+            @media screen-md
                 grid-template-columns: repeat(1, 1fr)
                 
             .{sp}-top__left
                 display flex
                 flex-direction column
                 justify-content center
-                @media mqMedium
+                @media screen-md
                     padding 0 8em
-                @media mqSmall
+                @media screen-sm
                     padding 0 6em
-                @media mqExtraSmall
+                @media screen-xs
                     padding 0 2em
                 .{sp}-h3
                     text-align left
                 .{sp}-p
                     margin-top 2em
-                    @media mqSmall
+                    @media screen-sm
                         font-size 14px
 
             .{sp}-top__right
@@ -52,17 +52,17 @@ sp = spec
                     background: url(http://site.ru/fon.png) 100% 0 repeat-y
                     z-index 2
 
-                    @media mqMedium
+                    @media screen-md
                         left 50%
                         margin-left -250px
                         top 50%
                         margin-top -150px
-                    @media mqSmall
+                    @media screen-sm
                         width 400px
                         height 400px
                         margin-left -200px
                         margin-top -100px
-                    @media mqExtraSmall
+                    @media screen-xs
                         width 300px
                         height 300px
                         margin-left -150px

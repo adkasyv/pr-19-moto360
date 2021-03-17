@@ -6,17 +6,19 @@ ab = about
         grid-template-columns: repeat(3, 1fr)
         align-items center
         grid-gap 3em
-        @media mqMedium
+        @media screen-md
             grid-template-columns repeat(1, 1fr)
             grid-template-rows 30em 30em
-        @media mqSmall
+        @media screen-sm
             align-items normal
             grid-template-rows 25em 25em
-        .{ab}-img
-            @media mqMedium
-                display none
-        .{ab}-left,
-        .{ab}-right
+        .{ab}-left
+            @media screen-md
+                padding 0 8em
+            @media screen-sm
+                padding 0 6em
+            @media screen-xs
+                padding 0 2em
             .{ab}-img_svg
                 display block
 
@@ -27,12 +29,9 @@ ab = about
             .{ab}-h3
                 margin-bottom 1em
                 text-align center
-                {mainColor}
-        .{ab}-left
+                color color-main
+        .{ab}-img
+            @media screen-md
+                display none
         .{ab}-right
-            @media mqMedium
-                padding 0 8em
-            @media mqSmall
-                padding 0 6em
-            @media mqExtraSmall
-                padding 0 2em
+            @extend .{ab}-left
